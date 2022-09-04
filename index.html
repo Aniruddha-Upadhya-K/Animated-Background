@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <svg class="dotted" xmlns="http://www.w3.org/2000/svg" height="400" width="400" overflow="visible">
+        <linearGradient id="light" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255, 255, 255, 1)"></stop>
+            <stop offset="100%" stop-color="rgba(255, 255, 255, 0.5)"></stop>
+        </linearGradient>
+        <circle cx="200" cy="200" r="200" fill="none" stroke="url(#light)" stroke-dasharray="12.5664" stroke-linecap="round" stroke-width="2" />
+    </svg>
+    
+    <!-- <SVG class="line" height="100vh" width="50%">
+        <defs>
+            <linearGradient id="light" x1="100%" y1="100%">
+                <stop offset="0%" stop-color="#CF4B59"></stop>
+                <stop offset="100%" stop-color="#3E3E3E"></stop>
+                <stop offset="0%" stop-color="rgba(255, 0, 0, 1)" />
+                <stop offset="100%" stop-color="rgba(255, 0, 0, 0)" />
+            </linearGradient>
+        </defs>
+        <line x1="100" y1="100" x2="100" y2="700" stroke="url(#light)" fill="none" stroke-width="5" />
+        <path class="path1" d="M100,750 l0,-650" stroke-width="5" fill="none" />
+    </SVG> -->
+    
+    <svg id="line" width="3" height="500" fill="none">
+        <path id="path1" d="M1.5 500V0" stroke="url(#grad)" stroke-width="2"/>
+        <defs>
+            <linearGradient id="grad" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+                <stop stop-color="rgba(255, 255, 255, 1)"/>
+                <!-- <stop offset="0.28" stop-color="#380087"/>
+                <stop offset="0.50" stop-color="#3C00AD"/> -->
+                <stop offset="1" stop-color="rgba(255, 255, 255, 0.25)"/>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <svg id="square" height="296" width="296" fill="none">
+        <path id="path2" d="M147.08 0L294.16 147.08L147.08 294.16L0 147.08L147.08 0Z" stroke="url(#square-grad)" stroke-width="2" stroke-linecap="round" />
+        <defs>
+            <linearGradient id="square-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="0" />
+                <stop stop-color="rgba(255, 255, 255, 0.5)" offset="0.5" />
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- <svg width="125" height="125">
+        <path id="triangle" d="M125 62.5C125 73.8701 121.964 84.5311 116.658 93.7165C105.856 112.416 85.6477 125 62.5 125C39.3437 125 19.1287 112.407 8.32992 93.6955C3.03157 84.5149 0 73.8615 0 62.5C0 27.9822 27.9822 0 62.5 0C97.0178 0 125 27.9822 125 62.5Z" fill="red"/>
+    </svg> -->
+        
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4">
+        <div class="insider"></div>
+    </div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js" integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="morph.js"></script> -->
+</body>
+</html>
