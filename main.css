@@ -24,18 +24,18 @@ body {
     height: 13rem;
     width: 13rem;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
+    top: 65%;
+    left: 67%;
     background: linear-gradient(to top, var(--gradientTop) 0%, var(--gradientMiddleBlue) 50%, var(--gradientMiddleVoilate) 75%, var(--gradientBottom) 100%);
     animation: transform 4s infinite ease-in-out alternate;
-    z-index: 3;
+    z-index: 2;
 }
 @keyframes transform {
     0% {
         transform: translate(0%, 0%) rotate(0deg);
     }
     100% {
-        transform: translate(-50%, -50%) rotate(540deg);
+        transform: translate(-35%, -60%) rotate(540deg);
     }
 }
 .circle2 {
@@ -64,8 +64,8 @@ body {
     }
 }
 .circle3 {
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     top: -10rem;
     right: -10rem;
@@ -95,13 +95,13 @@ body {
 }
 
 .circle4 {
-    height: 30rem;
-    width: 30rem;
+    height: 35rem;
+    width: 35rem;
     border-radius: 35%;
     transform: rotate(45deg);
     background: white;
-    top: 10%;
-    left: 15.5%;
+    top: 7%;
+    left: 13%;
     animation: ellipse 5s linear infinite forwards;
     opacity: 0.65;
     overflow: hidden;
@@ -109,14 +109,15 @@ body {
     justify-content: center;
     align-items: center;
     border: transparent;
+    z-index: 3;
 }
 .container {
-    height: 30rem;
-    width: 30rem;
-}
-.insider {
     height: 35rem;
     width: 35rem;
+}
+.insider {
+    height: 40rem;
+    width: 40rem;
     border: none;
     opacity: 0.95;
     background: linear-gradient(-45deg, var(--gradientTop) 0%, var(--gradientMiddleBlue) 50%, var(--gradientMiddleVoilate) 72%, var(--gradientBottom) 100%);
@@ -124,6 +125,7 @@ body {
     animation: background-rotate 8s infinite forwards linear;    
     margin-left: -2.5rem;
     margin-top: -2.5rem;
+    filter: grayscale(0.5);
 }
 @keyframes background-rotate {
     from {
@@ -137,8 +139,8 @@ body {
 .dotted {
     animation: rotate2 20s linear infinite;
     position: absolute;
-    top: -6%;
-    right: -4%;
+    top: -3%;
+    right: 25%;
     z-index: 0;
 }
 @keyframes rotate2 {
@@ -153,6 +155,7 @@ body {
 #line {
     bottom: 0;
     left: 13%;
+    z-index: 4;
 }
 #path1 {
     stroke-dasharray: 500;
@@ -172,7 +175,7 @@ body {
     top: 7%;
     left: -5%;
     animation: square-transform 8s infinite alternate ease;
-    z-index: 2;
+    z-index: 4;
 }
 @keyframes square-transform {
     0% {
@@ -214,8 +217,9 @@ body {
 .canvas {
     /* height: 30rem;
     width: 30rem; */
-    background-color: rgb(255, 255, 0);
+    background-color: #00fff2;
     background-color: transparent;
+    filter: contrast(2) brightness(2.5);
 }
 
 /* #triangle {

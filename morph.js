@@ -18,8 +18,8 @@ ctx = canvas.getContext("2d")
 canvasHeight = document.body.clientHeight
 canvasWidth = document.body.clientWidth
 
-canvas.height = 480
-canvas.width = 480
+canvas.height = 560
+canvas.width = 560
 
 var edge = canvas.width
 
@@ -47,7 +47,7 @@ function particleObject(radius, x, y, dx, dy) {
     this.strokeOpacity = []
 }
 
-var particleCount = 30, particle = [], defaultDistance = 250
+var particleCount = 35, particle = [], defaultDistance = 250
 
 // setInterval(distanceEditor, 5000)
 
@@ -171,7 +171,7 @@ function draw() {
                 ctx.moveTo(p.x, p.y)
                 ctx.lineTo(particle[j].x, particle[j].y)
                 ctx.strokeWidth = p.strokeWidth[j]
-                ctx.strokeStyle = `rgba(239, 31, 17, ${p.strokeOpacity[j]})`
+                ctx.strokeStyle = `rgba(248, 252, 55, ${p.strokeOpacity[j]})`
                 ctx.closePath()
                 ctx.stroke()
             }
@@ -182,7 +182,7 @@ function draw() {
         var p = particle[i]
 
         ctx.beginPath()
-        ctx.fillStyle = "#FDB687"
+        ctx.fillStyle = "#00fff2"
         
         ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI)
         ctx.fill()
