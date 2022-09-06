@@ -110,19 +110,27 @@ body {
     align-items: center;
     border: transparent;
 }
+.container {
+    height: 30rem;
+    width: 30rem;
+}
 .insider {
     height: 35rem;
     width: 35rem;
     border: none;
+    opacity: 0.95;
     background: linear-gradient(-45deg, var(--gradientTop) 0%, var(--gradientMiddleBlue) 50%, var(--gradientMiddleVoilate) 72%, var(--gradientBottom) 100%);
-    animation: background-rotate 8s infinite forwards linear;
+    /* background: linear-gradient(to bottom, rgba(124,124,255,1) 0%,rgba(103,74,165,1) 50%,rgba(89,67,127,1) 72%,rgba(70,41,89,1) 100%); */
+    animation: background-rotate 8s infinite forwards linear;    
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
 }
 @keyframes background-rotate {
     from {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg)
+        transform: rotate(360deg);
     }
 }
 
@@ -201,6 +209,13 @@ body {
     100% {
         stroke-dashoffset: 833;
     }
+}
+
+.canvas {
+    /* height: 30rem;
+    width: 30rem; */
+    background-color: rgb(255, 255, 0);
+    background-color: transparent;
 }
 
 /* #triangle {
