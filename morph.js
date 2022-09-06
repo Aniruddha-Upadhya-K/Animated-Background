@@ -1,15 +1,3 @@
-// anime({
-//     targets: "#triangle",
-//     d: [
-//         {value:"M125 62.5C125 73.8701 121.964 84.5311 116.658 93.7165C105.856 112.416 85.6477 125 62.5 125C39.3437 125 19.1287 112.407 8.32992 93.6955C3.03157 84.5149 0 73.8615 0 62.5C0 27.9822 27.9822 0 62.5 0C97.0178 0 125 27.9822 125 62.5Z"},
-//         {value:"M98.732 62.5L116.658 93.7165H62.5H8.32992L26.268 62.5L62.5 0L98.732 62.5Z"}
-//     ],
-//     easing: "easeInOutQuint",
-//     loop: true,
-//     direction: "alternate",
-//     duration: 5000
-// })
-
 var canvas, ctx, canvasHeight, canvasWidth
 
 canvas = document.querySelector(".canvas")
@@ -27,7 +15,6 @@ var borderRadiusPercentage = 33.3, borderRadius = canvas.width * borderRadiusPer
 canvas.style.borderRadius = borderRadius + 'px'
 
 var radius = Math.sqrt(Math.pow(edge/2, 2) + Math.pow(((edge/2) - borderRadius), 2))
-// var radius = 250
     
 function random(min, max) {
     return (Math.floor(Math.random() * (max - min + 1)) + min)
@@ -36,9 +23,7 @@ function random(min, max) {
 function particleObject(radius, x, y, dx, dy) {
     this.radius = radius
     this.x = x
-    // this.oldX = x
     this.y = y
-    // this.oldY = y
     this.dx = dx
     this.dy = dy
 
@@ -49,18 +34,12 @@ function particleObject(radius, x, y, dx, dy) {
 
 var particleCount = 35, particle = [], defaultDistance = 250
 
-// setInterval(distanceEditor, 5000)
-
 canvas.addEventListener("click", distanceEditor)
-
-// var distanceTxt = document.querySelector(".distanceCount")
-// distanceTxt.innerHTML = defaultDistance
 
 var adder = 25
 
 function distanceEditor() {
     defaultDistance += adder
-    // distanceTxt.innerHTML = defaultDistance
 
     if (defaultDistance > 250)
         adder *= -1
@@ -95,18 +74,6 @@ function distanceCalculator() {
         }
     }
 }
-
-// var color
-// colorPicker()
-// var colorID = 0
-
-// function colorPicker() {
-//     var mulColor = ["#D8A48F", "#BB8588", "#BBF1D1", "#FDB687"]
-//     color = mulColor[colorID]
-//     colorID++ 
-// }
-
-// canvas.addEventListener("click", colorPicker)
 
 function particleGenerator() {
     var radius = random(30, 50) / 10
