@@ -99,10 +99,8 @@ body {
     width: 35rem;
     border-radius: 35%;
     transform: rotate(45deg);
-    background: white;
     top: 7%;
     left: 13%;
-    animation: ellipse 5s linear infinite forwards;
     opacity: 0.65;
     overflow: hidden;
     display: flex;
@@ -121,7 +119,6 @@ body {
     border: none;
     opacity: 0.95;
     background: linear-gradient(-45deg, var(--gradientTop) 0%, var(--gradientMiddleBlue) 50%, var(--gradientMiddleVoilate) 72%, var(--gradientBottom) 100%);
-    /* background: linear-gradient(to bottom, rgba(124,124,255,1) 0%,rgba(103,74,165,1) 50%,rgba(89,67,127,1) 72%,rgba(70,41,89,1) 100%); */
     animation: background-rotate 8s infinite forwards linear;    
     margin-left: -2.5rem;
     margin-top: -2.5rem;
@@ -215,30 +212,7 @@ body {
 }
 
 .canvas {
-    /* height: 30rem;
-    width: 30rem; */
     background-color: #00fff2;
     background-color: transparent;
     filter: contrast(2) brightness(2.5);
 }
-
-/* #triangle {
-    animation: triangle 10s linear alternate infinite; 
-    opacity: 1;
-    transition: all 10s linear; 
-} */
-/* #triangle:hover {
-    d: path("M113.533 89.0395L116.253 93.75H62.1265H8L10.72299 89.0336L62.1265 0L62.1265 0Z");
-} */
-/* @keyframes triangle {
-    0% {
-        d: path("M125 62.5C125 73.8701 121.964 84.5311 116.658 93.7165C105.856 112.416 85.6477 125 62.5 125C39.3437 125 19.1287 112.407 8.32992 93.6955C3.03157 84.5149 0 73.8615 0 62.5C0 27.9822 27.9822 0 62.5 0C97.0178 0 125 27.9822 125 62.5Z");
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        d: path("M113.533 89.0395L116.253 93.75H62.1265H8L10.72299 89.0336L62.1265 0L62.1265 0Z");
-    }
-    
-} */
